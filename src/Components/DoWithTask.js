@@ -38,11 +38,13 @@ const TaskBody = styled.div`
   }
 `;
 
+
+
 const TaskAble = ({ task, onSubmit, theme, setTask }) => {
   const handleDelete = (index) => {
     const tasking = [...task];
 
-    const newTask = tasking.filter((id) => index != tasking.indexOf(id));
+    const newTask = tasking.filter((id) => index !== tasking.indexOf(id));
     setTask(newTask);
   };
 
