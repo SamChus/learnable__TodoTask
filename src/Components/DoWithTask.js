@@ -27,6 +27,7 @@ const TaskBody = styled.div`
   font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 1.5;
+  color: ${({ theme }) => theme.c1};
 
   img:last-of-type {
     width: 17px;
